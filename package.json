@@ -1,14 +1,19 @@
 {
   "name": "feavel_tang",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Feavel Loves Tang",
   "main": "index.js",
   "type": "module",
+  "homepage":"feavel.com",
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/feavel1/node-game"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["node"],
+  "author": "feavel",
   "license": "ISC",
   "bin":"/index.js",
   "dependencies": {
