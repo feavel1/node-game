@@ -135,12 +135,24 @@ async function question6() {
   return handleAnswer(answer.question_6 == "书城");
 }
 
+async function question7() {
+  const answer = await inquirer.prompt({
+    name: "question_7",
+    type: "list",
+    message: "糖宝为什么爱丹宝?\n 因为丹宝很... \n",
+    choices: ["照顾糖宝～", "尊重糖宝～", "理解糖宝～", "专一～", "以上都是"],
+  });
+
+  return handleAnswer(answer.question_7 == "以上都是");
+}
+
 await welcome();
 await askName();
-await question1();
-await question2();
-await question3();
-await question4();
-await question5();
-await question6();
+// await question1();
+// await question2();
+// await question3();
+// await question4();
+// await question5();
+// await question6();
+await question7();
 await winner();
